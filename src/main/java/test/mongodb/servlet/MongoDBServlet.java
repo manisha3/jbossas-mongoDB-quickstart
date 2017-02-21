@@ -51,7 +51,7 @@ public class MongoDBServlet extends HttpServlet {
         super.init(config);
 	String host = System.getenv("10.1.101.90");
         String sport = System.getenv("27017");
-        String db = System.getenv("javamon");
+        String db = System.getenv("sampledb");
         if(db == null)
             db = "mydb";
         String user = System.getenv("userLV7");
@@ -59,7 +59,7 @@ public class MongoDBServlet extends HttpServlet {
         int port = Integer.decode(sport);
 
         try {
-            mongo = new Mongo(host , port);
+            mongo = new Mongo(10.1.101.90, 27017);
         } catch (UnknownHostException e) {
             throw new ServletException("Failed to access Mongo server", e);
         }
