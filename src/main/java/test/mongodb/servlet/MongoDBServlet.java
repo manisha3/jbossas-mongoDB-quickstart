@@ -49,11 +49,11 @@ public class MongoDBServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-	String host = System.getenv("10.1.101.90");
+	String host = System.getenv("172.30.158.181");
         String sport = System.getenv("27017");      
         String db = System.getenv("sampledb");
         if(db == null)
-            db = "mydb";
+            db = "sampledb";
         String user = System.getenv("userLV7");
         String password = System.getenv("QQcWUu2Oublubq3c");
         int port = Integer.decode(sport);
