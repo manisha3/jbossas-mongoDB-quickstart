@@ -50,7 +50,7 @@ public class MongoDBServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
 	String host = System.getenv("10.1.101.90");
-        String port = System.getenv("27017");      //made sport to port
+        String sport = System.getenv("27017");      
         String db = System.getenv("sampledb");
         if(db == null)
             db = "mydb";
