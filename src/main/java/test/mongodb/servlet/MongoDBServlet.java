@@ -60,7 +60,7 @@ public class MongoDBServlet extends HttpServlet {
 
         try 
 	{
-            mongo = new Mongo(10.1.101.90, 27017);
+            mongo = new Mongo(host, port);
         } 
 	catch (UnknownHostException e)
 	{
