@@ -54,7 +54,7 @@ public class MongoDBServlet extends HttpServlet {
         String db = System.getenv("MONGODB_DATABASE");
         if(db == null)
             db = "mydb";
-        String user = System.getenv("MONGODB_DATABASE");
+        String user = System.getenv("MONGODB_USER");
         String password = System.getenv("MONGODB_PASSWORD");
         int port = Integer.decode(sport);
 
