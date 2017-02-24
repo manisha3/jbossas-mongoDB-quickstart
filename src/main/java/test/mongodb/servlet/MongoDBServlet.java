@@ -58,15 +58,15 @@ public class MongoDBServlet extends HttpServlet {
         String password = "c7itwQMbwfcVsKN2"; */
         int port = Integer.decode(sport);
 
-        try 
+/*        try 
 	{
             mongo = new Mongo("172.30.143.34", port);
         } 
-/*	catch (UnknownHostException e)
+	catch (UnknownHostException e)
 	{
            throw new ServletException("Failed to access Mongo server", e);
       	}
-        mongoDB = mongo.getDB(db);
+           mongoDB = mongo.getDB(db);
         if(mongoDB.authenticate(user, password.toCharArray()) == false) {
             throw new ServletException("Failed to authenticate against db: "+db);
         } */
