@@ -49,7 +49,7 @@ public class MongoDBServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-	String host = "172.30.143.34";  
+	String host = "10.1.43.213";  
         String sport = "27017";      
         String db = "sampledb";
         if(db == null)
@@ -60,7 +60,7 @@ public class MongoDBServlet extends HttpServlet {
 	    
      try 
 	{
-            mongo = new Mongo("172.30.143.34", port);
+            mongo = new Mongo("10.1.43.213", port);
         } 
 	catch (UnknownHostException e)
 	{
