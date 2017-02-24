@@ -55,7 +55,7 @@ public class MongoDBServlet extends HttpServlet {
         if(db == null)
             db = "mydb";
         String user = "admin";
-        String password = "root";
+        String password = "c7itwQMbwfcVsKN2";
         int port = Integer.decode(sport);
 
         try 
