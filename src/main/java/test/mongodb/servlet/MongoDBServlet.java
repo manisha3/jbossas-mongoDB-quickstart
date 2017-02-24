@@ -51,7 +51,7 @@ public class MongoDBServlet extends HttpServlet {
         super.init(config);
 	String host = "172.30.143.34";  
         String sport = "27017";      
-        String db = "mongoapp";
+        String db = "sampledb";
         if(db == null)
             db = "mydb";
         String user = "admin";
